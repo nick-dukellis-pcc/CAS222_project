@@ -1,0 +1,257 @@
+/*
+File Name: style.less
+Date: 02/15/2021
+Programmer: Niko Dukellis
+*/
+
+// Variables - Colors
+@bg-color: #ffffff;
+@bg-tone-color: #dddeee;
+@highlight-color: #ff0000;
+@highlight-shadow-color: (@highlight-color - #880000);
+@text-header-color: #000000;
+@header-shadow-color: (@text-header-color + #444444);
+
+// Variables - Font Sizes
+@h1size-m: 2em;
+@h2size-m: (@h1size-m * .625);
+@psize-m: (@h1size-m * .5);
+@h1size-t: (@h1size-m * 1.5);
+@h2size-t: (@h1size-t * .5);
+@psize-t: (@h1size-t * .35);
+@h1size-d: (@h1size-m * 2);
+@h2size-d: (@h1size-d * .5);
+@psize-d: (@h1size-d * .25);
+@footersize: (@h1size-m * .38);
+    
+//Variables - Other
+@text-border: 2px solid @text-header-color;
+@text-shadow: 1px;
+@text-shadow-m: @text-shadow @text-shadow;
+@text-shadow-t: (@text-shadow * 3px) (@text-shadow * 3px);
+@text-shadow-d: (@text-shadow * 5px) (@text-shadow * 5px);
+@quick-margin: 30px auto;
+
+
+body {
+    background-color: @bg-color;
+    font-family: 'Georgia', serif;
+    font-weight: 200;
+}
+
+h1{
+    font-size: @h1size-m;
+    line-height: 1.5em;
+    color: @text-header-color;
+    text-shadow: @text-shadow-m @header-shadow-color;
+    text-align: center;
+    margin: auto;
+    width: 85%;
+}
+
+h2{
+    font-size: @h2size-m;
+    line-height: 1.25em;
+    padding: .5em 0;
+    color: @highlight-color;
+    text-shadow: @text-shadow-m @highlight-shadow-color;
+    text-align: center;
+}
+
+h3 {
+    color: @highlight-color;
+}
+
+p{ 
+    font-size: @psize-m;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 1.1em;
+    color: @text-header-color;
+    padding: .5em;
+}
+
+header {
+    background-color: @bg-tone-color;
+}
+
+section {
+    margin: @quick-margin;
+    border: @text-border;
+    width: 90%;
+}
+
+aside {
+    margin: @quick-margin;
+    border: @text-border;
+    width: 90%;
+}
+
+footer {
+    background-color: @bg-tone-color;
+    padding: 10px;
+    font-size: @footersize;
+    text-align: center;
+}
+
+#responsive-tablet, #responsive-desktop {
+    display: none;
+}
+
+#desktop {
+    display: none;
+}
+
+//Forms
+
+form {
+     background-color: #ffffff; 
+     font-family: Cinzel, Arial, serif; 
+     padding: 10px; 
+     padding-top: 35px; 
+}
+
+input, textarea, select {
+    display: block;
+    margin-bottom: 2em;
+}
+
+#wrapper {
+     background-color: #ffffff; 
+     width: 100%;
+     margin-left: auto; 
+     margin-right: auto; 
+     /*width: 80%;*/
+}
+
+#honeypot {
+     display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    
+    body {
+    }
+    
+    h1 {
+        font-size: @h1size-t;
+        text-shadow: @text-shadow-t @header-shadow-color;
+    }
+    
+    h2 {
+        font-size: @h2size-t;
+        line-height: 1em;
+    }
+    
+    p {
+        font-size: @psize-t;
+    }
+    
+    header {
+      padding: 20 0;
+    }
+
+    section {
+        margin-top: 90px;
+    }
+
+    aside {
+        display: inline-block;
+        width: 40%;
+        margin: 0 4.8%;
+    }
+    
+    footer {
+        font-size: (@footersize * 1.15);
+        margin-top: 30px;
+    }
+
+    #responsive-tablet {
+        display: block;
+    }
+    
+    #float {
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+
+    body {
+    }
+    
+    h1 {
+        font-size: @h1size-d;
+    }
+    
+    h2 {
+        font-size: @h2size-d;
+    }
+    
+    p {
+        font-size: @psize-d;
+    }
+    
+    header {
+        padding: 50px 0;
+    }
+    
+    section {
+        margin-top: 30px;
+    }
+
+    aside {
+        margin: @quick-margin;
+    }   
+    
+    footer {
+        font-size: (@footersize * 1.25);
+        clear: both;
+        margin: 0;
+    }
+   
+    #responsive-desktop {
+        display: block;
+    }
+    
+    [class*='col-'] {
+        float: left;
+    }
+    
+    .col-1-4 {
+        width: 20%;
+    }
+    
+    .col-1-2 {
+        width: 50%;
+    }
+    
+    .grid:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    *, *:after, *:before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    [class*='col-'] {
+        margin-right: 5%
+    }
+    
+    [class*='col-']:last-child {
+        margin-right: 0;
+    }
+    
+    #tablet {
+        display: none;
+    }
+    
+    #desktop {
+        display: grid;
+    }
+}
+
