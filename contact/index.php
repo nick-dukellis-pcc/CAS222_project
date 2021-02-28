@@ -1,4 +1,5 @@
 <?php
+
 try
 {
   $pdo = new PDO('mysql:host=localhost;dbname=ndukelli_aith', 'ndukelli_pht_user', 'phtmyP4ssw0rd');
@@ -15,47 +16,23 @@ catch (PDOException $e)
 if (isset($_POST['myname']))
   {
     $name = $_POST['myname'];
-    $age = $_POST['myage'];
-    $role = $_POST['myrole'];
-    $phone = $_POST['myphone'];
     $email = $_POST['myemail'];
-    $contactname = $_POST['contactname'];
-    $contactphone = $_POST['contactphone'];
-    $gender = $_POST['mygender'];
-    $shirtsize = $_POST['myshirtsize'];
-    $saturday = $_POST['saturday'];
-    $sunday = $_POST['sunday'];
     $comments = $_POST['mycomments'];
+    $role = $_POST['myrole'];
     // If the if statement is true, save each form field value as a variable. These variable values will be used in the thank you page.
 
-    // Runs the try/catch to attempt to insert data in the database.
+    // Runs a try/catch to attempt to insert data in the database.
     try {
-      $sql = 'INSERT INTO registrations SET
+      $sql = 'INSERT INTO contact SET
         name = :name,
-        age = :age,
-        role = :role,
-        phone = :phone,
         email = :email,
-        contactname = :contactname,
-        contactphone = :contactphone,
-        gender = :gender,
-        shirtsize = :shirtsize,
-        saturday = :saturday,
-        sunday = :sunday,
-        comments = :comments';
+        comments = :comments,
+        role = :role';
       $s = $pdo->prepare($sql);
         $s->bindValue(':name', $name);
-        $s->bindValue(':age', $age);
-        $s->bindValue(':role', $role);
-        $s->bindValue(':phone', $phone);
         $s->bindValue(':email', $email);
-        $s->bindValue(':contactname', $contactname);
-        $s->bindValue(':contactphone', $contactphone);
-        $s->bindValue(':gender', $gender);
-        $s->bindValue(':shirtsize', $shirtsize);
-        $s->bindValue(':saturday', $saturday);
-        $s->bindValue(':sunday', $sunday);
         $s->bindValue(':comments', $comments);
+        $s->bindValue(':role', $role);
       $s->execute();
     }
     catch (PDOException $e)
@@ -72,6 +49,6 @@ if (isset($_POST['myname']))
     
   } else {
       
-include 'registration.html.php';
+include 'contact.html.php';
 
 }
