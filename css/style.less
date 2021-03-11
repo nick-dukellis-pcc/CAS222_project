@@ -58,15 +58,20 @@ h2{
 
 h3 {
     color: @highlight-color;
+    text-align: center;
 }
 
-p{ 
+p, article ul li, article ol li { 
     font-size: @psize-m;
     font-family: Helvetica, sans-serif;
     font-weight: 100;
     line-height: 1.1em;
     color: @text-header-color;
     padding: .5em;
+}
+
+article ol lh {
+  margin: 0 auto;
 }
 
 header {
@@ -81,7 +86,6 @@ section {
 
 aside {
     margin: @quick-margin;
-    border: @text-border;
     width: 90%;
 }
 
@@ -128,6 +132,9 @@ input, textarea, select {
      display: none;
 }
 
+.time {
+    text-align: center;
+}
 
 
 @media only screen and (min-width: 600px) {
@@ -171,13 +178,15 @@ input, textarea, select {
 
     #responsive-tablet {
         display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
     }
     
     #float {
         float: left;
     }
-    
-    // Tablet Forms 
     
     #wrapper {
         width: 80%;
@@ -224,13 +233,18 @@ input, textarea, select {
     #responsive-desktop {
         display: block;
     }
-    
+    #responsive-tablet {
+        margin-top: 0;
+    }  
+  
     [class*='col-'] {
         float: left;
     }
     
     .col-1-4 {
-        width: 20%;
+        width: 23%;
+        border: 2px solid black;
+        overflow: hidden;
     }
     
     .col-1-2 {
@@ -250,7 +264,7 @@ input, textarea, select {
     }
     
     [class*='col-'] {
-        margin-right: 5%
+        margin-right: 2%
     }
     
     [class*='col-']:last-child {

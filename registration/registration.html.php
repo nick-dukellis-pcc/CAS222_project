@@ -57,6 +57,30 @@
               <textarea name="mycomments" id="mycomments" rows="2" cols="20" required></textarea>
             <input id="mysubmit" type="submit" value="Submit">
           </form>
+          <article>
+            <h3>Long Course</h3>
+            <p>$240</p>
+            <h3>Olympic</h3>
+            <p>$110</p>
+            <h3>10K</h3>
+            <p>$50</p>
+            <h3>Half Marathon</h3>
+            <p>$75</p>
+            <h3>Sprint</h3>
+            <p>$90</p>
+            <h3>Try-a-Tri</h3>
+            <p>$65</p>
+            <h3>Cost Includes</h3>
+            <ul>
+              <li>Food & Beer</li>
+              <li>Access to the weekend's live entertainment & Fitness Expo</li>
+              <li>Commemorative Finisher medal</li>
+              <li>Accurate Chip Timing for competitive races</li>
+              <li>Ace in the Hole Multisport Weekend Tech Shirt</li>
+              <li>Post-event party & entertainment</li>
+            </ul>
+            <p>NOTE: Tech shirts guaranteed to pre-registered participants only.</p>
+          </article>
         </div>
       </main>
     </div>
