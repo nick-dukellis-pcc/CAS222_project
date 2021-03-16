@@ -37,6 +37,7 @@
               </select>
             <input id="mysubmit" type="submit" value="Submit">
           </form>
+          <img src="../ism/image/slides/_u/1615257730811_214371.jpg" alt="Racers at the beginning of the try-a-tri event">
         </div>
       </main>
     </div>

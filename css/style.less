@@ -13,7 +13,7 @@ Programmer: Niko Dukellis
 @header-shadow-color: (@text-header-color + #444444);
 
 // Variables - Font Sizes
-@h1size-m: 2em;
+@h1size-m: 2.1em;
 @h2size-m: (@h1size-m * .625);
 @psize-m: (@h1size-m * .5);
 @h1size-t: (@h1size-m * 1.5);
@@ -46,6 +46,7 @@ h1{
     text-align: center;
     margin: auto;
     width: 85%;
+    font-weight: 600;
 }
 
 h2{
@@ -54,11 +55,17 @@ h2{
     padding: .5em 0;
     color: @highlight-color;
     text-align: center;
+    font-weight: 600;
+}
+
+#slimh2 {
+    font-weight: 500;
 }
 
 h3 {
     color: @highlight-color;
     text-align: center;
+    font-weight: 600;
 }
 
 p, article ul li, article ol li { 
@@ -68,10 +75,6 @@ p, article ul li, article ol li {
     line-height: 1.1em;
     color: @text-header-color;
     padding: .5em;
-}
-
-article ol lh {
-  margin: 0 auto;
 }
 
 header {
@@ -104,11 +107,21 @@ footer {
     display: none;
 }
 
+#logotype {
+    display: block;
+    margin: 0 auto; 
+}
+
+img {
+    display: block;
+    margin: @quick-margin;
+}
+
 //Forms
 
 form {
      background-color: #ffffff; 
-     font-family: Cinzel, Arial, serif; 
+     font-family: Georgia, Arial, serif; 
      padding: 10px; 
      padding-top: 35px; 
 }
@@ -132,7 +145,11 @@ input, textarea, select {
      display: none;
 }
 
-.time {
+footer a {
+    color: @highlight-color;
+}
+
+.centered {
     text-align: center;
 }
 
@@ -164,12 +181,6 @@ input, textarea, select {
     section {
         margin-top: 90px;
     }
-
-    aside {
-        display: inline-block;
-        width: 40%;
-        margin: 0 4.8%;
-    }
     
     footer {
         font-size: (@footersize * 1.15);
@@ -178,7 +189,6 @@ input, textarea, select {
 
     #responsive-tablet {
         display: block;
-        margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
         max-width: 80%;
@@ -194,6 +204,15 @@ input, textarea, select {
         margin-right: auto; 
     }
 }
+
+@media only screen and (min-width: 850px) {
+  aside {
+        display: inline-block;
+        width: 40%;
+        margin: 0 4.8%;
+    }
+}
+
 
 @media only screen and (min-width: 1250px) {
 
@@ -234,7 +253,7 @@ input, textarea, select {
         display: block;
     }
     #responsive-tablet {
-        margin-top: 0;
+        margin: 30px auto;
     }  
   
     [class*='col-'] {

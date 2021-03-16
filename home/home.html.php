@@ -9,7 +9,7 @@ Programmer: Niko Dukellis
     <meta charset="utf-8">
     <meta name="author" content="Niko Dukellis">
     <base target="_blank">
-    <title>Ace In The Hole Athletics</title>
+    <title>Ace In The Hole Multisports Events</title>
     <!-- Links to fonts used and css pages -->
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -26,7 +26,7 @@ Programmer: Niko Dukellis
         </aside>
           <section class="col-1-2"> <!-- About Us content on main page. would be changed to a <form> for both the contact and register pages. -->
             <article>
-              <h2>Ace in the Hole Multisport Events is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds. We offer Events for Every Body.</h2>
+              <h2 id="slimh2">Ace in the Hole Multisport Events is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds. We offer Events for Every Body.</h2>
             </article>
             <hr>
             <article>
@@ -47,20 +47,20 @@ Programmer: Niko Dukellis
             <article>
               <h2>Saturday Start Times</h2>
               <h3>Long Course Triathlon</h3>
-              <p class="time">7:00 AM</p>
+              <p class="centered">7:00 AM</p>
               <h3>Olympic Triathlon</h3>
-              <p class="time">7:30 AM</p>
+              <p class="centered">7:30 AM</p>
               <h3>10K</h3>
-              <p class="time">7:15 AM</p>
+              <p class="centered">7:15 AM</p>
               <h3>Half Marathon</h3>
-              <p class="time">7:15 AM</p>
+              <p class="centered">7:15 AM</p>
               <h2>Sunday Start Times</h2>
               <h3>Sprint Triathlon</h3>
-              <p class="time">8:00 AM</p>
+              <p class="centered">8:00 AM</p>
               <h3>Try-a-Tri</h3>
-              <p class="time">8:20 AM</p>
+              <p class="centered">8:20 AM</p>
               <h3>Splash n Dash</h3>
-              <p class="time">12:00 PM</p>
+              <p class="centered">12:00 PM</p>
             </article>
             <hr>
             <article>
@@ -106,59 +106,59 @@ Programmer: Niko Dukellis
             <center><a class="twitter-timeline" data-width="340" data-height="750" data-border-color="000000" href="https://twitter.com/pcccas222?ref_src=twsrc%5Etfw">Tweets by pcccas222</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
           </aside>
         </div>
-      <article id="responsive-tablet">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/45d52n122d68/portland/?unit=us" data-label_1="PORTLAND" data-label_2="1-Week Forecast" data-icons="Climacons Animated" data-mode="Forecast" data-theme="hexellence" >PORTLAND 1-Week Forecast</a>
-            <script>
-              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-            </script>
-          </article>
       <article id="responsive-desktop">
               <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-interval="10000" id="image_slider">
                 <ol>
                   <li>
-                    <img src="ism/image/slides/_u/1615257733023_820968.jpg">
+                    <img src="ism/image/slides/_u/1615257733023_820968.jpg" alt="A diverse group of runners coming down a long street">
                     <div class="ism-caption ism-caption-0">A diverse group of runners coming down a long street</div>
                   </li>
-                  <li>
-                    <img src="ism/image/slides/_u/1615257731159_929332.jpg">
-                    <div class="ism-caption ism-caption-0">Competitors in our most packed event to date</div>
+                  <li>                    
+                    <img src="ism/image/slides/_u/ace12.jpg" alt="Bikers giving their all near the end of the race">
+                    <div class="ism-caption ism-caption-0">Bikers giving their all near the end of the race</div>
                   </li>
                   <li>
-                    <img src="ism/image/slides/_u/1615257730811_214371.jpg">
-                    <div class="ism-caption ism-caption-0">Racers at the beginning of the try-a-tri event</div>
+                    <img src="ism/image/slides/_u/ace11.jpg" alt="Low-angle photo of oncoming runners' legs and feet hitting concrete">
+                    <div class="ism-caption ism-caption-0">Low-angle photo of oncoming runners' legs and feet hitting concrete</div>
                   </li>
                   <li>
-                    <img src="ism/image/slides/_u/1615257729649_170241.jpg">
-                    <div class="ism-caption ism-caption-0">Positioning for a long-form water race</div>
+                    <img src="ism/image/slides/_u/1615257729649_170241.jpg" alt="Racers Positioning for a long-form water race">
+                    <div class="ism-caption ism-caption-0">Racers Positioning for a long-form water race</div>
                   </li>
                   <li>
-                    <img src="ism/image/slides/_u/1615257729059_919798.jpg">
+                    <img src="ism/image/slides/_u/1615257729059_919798.jpg" alt="Runners near the end of the track">
                     <div class="ism-caption ism-caption-0">Runners near the end of the track</div>
                   </li>
                   <li>
-                    <img src="ism/image/slides/_u/1615257728919_709709.jpg">
+                    <img src="ism/image/slides/_u/1615257728919_709709.jpg" alt="Runner tears the finish line at the Padova Marathon">
                     <div class="ism-caption ism-caption-0">Runner tears the finish line at the Padova Marathon</div>
                   </li>
                   <li>
-                    <img src="ism/image/slides/_u/1615257728579_474305.jpg">
+                    <img src="ism/image/slides/_u/1615257728579_474305.jpg" alt="Bikers in front near the finish line begin to celebrate">
                     <div class="ism-caption ism-caption-0">Bikers in front near the finish line begin to celebrate</div>
                   </li>
                   <li>
-                    <img src="ism/image/slides/_u/1615257728498_39270.jpg">
+                    <img src="ism/image/slides/_u/1615257728498_39270.jpg" alt="Street racers running up an inclined road">
                     <div class="ism-caption ism-caption-0">Street racers running up an inclined road</div>
                   </li>
                   <li>
-                    <img src="ism/image/slides/_u/1615257726889_422632.jpg">
+                    <img src="ism/image/slides/_u/1615257726889_422632.jpg" alt="Women's sprinting division on a racetrack">
                     <div class="ism-caption ism-caption-0">Women's sprinting division on a racetrack</div>
                   </li>
                   <li>
-                    <img src="ism/image/slides/_u/1615257726612_448240.jpg">
+                    <img src="ism/image/slides/_u/1615257726612_448240.jpg" alt="Offroad runners sparsely occupying a gravel path">
                     <div class="ism-caption ism-caption-0">Offroad runners sparsely occupying a gravel path</div>
                   </li>
                 </ol>
               </div>
               <p class="ism-badge" id="image_slider-ism-badge"><a class="ism-link" href="http://imageslidermaker.com" rel="nofollow">generated with ISM</a></p>
             </article>
+      <article id="responsive-tablet">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/45d52n122d68/portland/?unit=us" data-label_1="PORTLAND" data-label_2="1-Week Forecast" data-icons="Climacons Animated" data-mode="Forecast" data-theme="hexellence" >PORTLAND 1-Week Forecast</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+          </article>
       </main>
     <?php include 'includes/footer.inc.html.php'; ?>
   </body>
