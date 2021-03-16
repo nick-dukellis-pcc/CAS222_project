@@ -11,4 +11,4 @@ Image Gallery Widget used: https://imageslidermaker.com/v2
 
 Reset CSS page used: http://meyerweb.com/eric/tools/css/reset/ 
 
-All other code is proprietary, written firsthand by Niko Dukellis between Jan 4th-Mar 20, 2021.
+All other code is proprietary, written firsthand by Niko Dukellis between Jan 4th-Mar 16th, 2021.
